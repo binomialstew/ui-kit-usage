@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 10px;
+}
+
+.icon-button {
+  position: relative;
+}
+
+.component-heading {
+  margin-bottom: 0.5rem;
+}

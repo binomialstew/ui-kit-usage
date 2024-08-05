@@ -1,26 +1,24 @@
 {
   "name": "ui-kit-external",
   "version": "0.1.0",
+  "author": "Charles Lehnert <charles.lehnert@cds-global.com>",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "11.13.0",
+    "@media-platforms/scope": "^0.5.1",
+    "@media-platforms/ui-kit": "^0.37.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "rm -rf node_modules/@media-platforms/dynamic-svg-fre/node_modules/react && craco start",
+    "build": "craco build",
+    "postinstall": "patch-package"
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "react-app"
     ]
   },
   "browserslist": {
@@ -34,5 +32,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-react-jsx-source": "^7.24.7",
+    "@craco/craco": "^7.1.0",
+    "@emotion/babel-plugin": "^11.12.0",
+    "craco-babel-loader": "^1.0.4",
+    "patch-package": "^8.0.0",
+    "react-scripts": "5.0.1"
   }
 }

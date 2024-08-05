@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+set -e
+
+# Run patch-package
+if [ -d "node_modules/patch-package" ]; then
+	npx patch-package
+fi
